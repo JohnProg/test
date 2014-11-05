@@ -16,14 +16,18 @@ a, button, p {
 	background-color: #ff6600;
 	border-color: #e65c00;
 	border-radius: 5px !important;
+	font-weight: bold;
 }
 
 .container {
 	text-align: center;
 	height: 40%;
 }
-a.active {
-    color: #ffffff !important; background-color: #ff6600; border-color: #e65c00; border-radius: 5px !important;
+a.active, a.active:hover  {
+    color: #ffffff !important; 
+    background-color: #ff6600 !important;  
+    border-color: #e65c00 !important; 
+    border-radius: 5px !important;
 }
 
 .navbar-fixed-top {
