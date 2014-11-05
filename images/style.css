@@ -7,15 +7,8 @@ body {
 	background-image: url('../images/bg.jpg');
 	background-attachment: fixed;
 }
-a, button, p {
+a, button {
 	transition: all .5s ease-in-out;
-}
-
-.btn-primary {
-	color: #ffffff;
-	background-color: #ff6600;
-	border-color: #e65c00;
-	border-radius: 5px !important;
 }
 
 .container {
@@ -229,48 +222,19 @@ a, button, p {
 	position: absolute;
 	top: 10em;
 }
-#home h1 {
-	width: 60%;
-	color: white;
-	background: #4183D7;
-	padding: 10px 15px;
-	text-align: center;
-	position: absolute;
-	top: 7em;
-	left: 3em;
+.carousel-caption h1 {
+	width: 90%;
+	margin-top: 3em;
 }
 
-#home .btn-primary {
-    position: absolute;
-    top: 22em;
-    left: 6em;
+.carousel-caption h1, .carousel-caption p {
+    background: #4183D7;
+    padding: 10px 15px;
+    text-align: center;
 }
 
-#home p {
+.carousel-caption p {
 	width: 70%;
-}
-.medios {
-    height: 1000px;
-}
-.brand p {
-    position: absolute;
-    top: 0;
-    color: black;
-    padding: 5.3em 2.5em;
-    left: 47px;
-    background: rgba(233, 233, 239, 0.9);
-    border-radius: 50%;
-    width: 286px;
-    height: 285px;
-    border: 1px solid #e65c00;
-    font-size: 16px;
-    transition: all .5s ease-in-out;    
-    display: none;   
-}
-
-.brand {
-    display: block;
-    border-radius: 50%;
 }
 .carousel-indicators {
     position: absolute;
@@ -305,38 +269,6 @@ a, button, p {
   height: 600px;
 }
 
-
-/*slider*/
-.owl-pagination {
-	top: 2%;
-	position: absolute;
-	right: 0;
-	left: 50%;
-}
-
-.owl-next {
-    position: absolute;
-    right: 0;
-    top: 50%;
-}
-
-.owl-prev {
-    position: absolute;
-    left: 0;
-    top: 50%;
-}
-
-.owl-item {
-	position: relative;
-    text-align: center;
-}
-.owl-prev, .owl-next {
-    font-size: 60px !important;
-    background: none !important;
-    color: black !important;
-    margin: 0 0.5em !important;
-}
-
 /* RESPONSIVE CAROUSEL
 
   /* Bump up size of carousel content */
@@ -354,14 +286,14 @@ a, button, p {
     font-size: 19px;
 }
 
-.cliente:after {
+/*.cliente:after {
     content: "";
     position: absolute;
     width: 100%;
     background: #ff6600;
     bottom: -15px;
     left: 0;
-    height: 10px;
+    height: 10px;*/
 }
 .servicios-banner::after, 
 .medios-banner::after,
@@ -374,29 +306,29 @@ a, button, p {
     z-index: 1;
     top: 0;
 }
-.cliente {
-	margin-top: 2em;
-	padding-top: 1em;
-    background: #4183D7;
-/*    border-bottom: 10px solid white;
-    margin: 1em;
-    color: white;*/
-}
+			.cliente {
+				margin-top: 2em;
+				padding-top: 1em;
+			    background: #4183D7;
+			/*    border-bottom: 10px solid white;
+			    margin: 1em;
+			    color: white;*/
+			}
 
-.cliente img:last-child {
-    margin-bottom: 2em;
-}
-.cliente .texto {
-	margin-top: 1.5em;
-	text-align: left;
-	color: #fff;
-}
+			.cliente img:last-child {
+			    margin-bottom: 2em;
+			}
+			.cliente .texto {
+				margin-top: 1.5em;
+				text-align: left;
+				color: #fff;
+			}
 
-.cliente .firma {
-	margin-top: 1.5em;
-	text-align: right;
-	color: #fff;
-}
+			.cliente .firma {
+				margin-top: 1.5em;
+				text-align: right;
+				color: #fff;
+			}
 
 /* RESPONSIVE CAROUSEL
 
