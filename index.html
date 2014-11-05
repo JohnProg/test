@@ -9,7 +9,9 @@
 		<!-- Bootstrap -->
 		<link href="css/bootstrap.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
-
+		
+		<link href="css/owl.carousel.css" rel="stylesheet">
+    	<link href="css/owl.theme.css" rel="stylesheet">
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -43,7 +45,7 @@
                 <li><a href="#home"><img src="images/ico-peru.png" alt="Peru"> Llama al +511 475 1354</a></li>
               </ul>
             </div>
-            <a href="#contacto" class="btn btn-success">Solicita una visita</a>
+            <a href="#contacto" data-type="2" class="btn btn-primary">Solicita una visita</a>
           </form>
         </div><!--/.navbar-collapse -->
       </div>
@@ -58,40 +60,18 @@
 
     <!-- Home -->
     <section id="home">
-	    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-	      <ol class="carousel-indicators">
-	        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-	        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-	      </ol>
-	      <div class="carousel-inner" role="listbox">
-	        <div class="item active">
-	          <img src="images/home-banner.jpg" alt="Hub Educacion">
-	          <div class="container">
-	            <div class="carousel-caption">	              
-	              <h1>Mejores resultados con un alto valor. El mejor CPA para el mercado educativo</h1>
-	              <a href="#contacto" class="btn btn-lg btn-primary" href="" role="button">Entérate como »</a>	              
-	            </div>
-	          </div>
+    	<div id="owl-demo" class="owl-carousel">
+
+	        <div class="item"><img src="images/home-banner.jpg" alt="Hub Educacion">
+	        	<h1>Mejores resultados con un alto valor. El mejor CPA para el mercado educativo</h1>
+              	<p><a class="btn btn-lg btn-primary" data-type="0" href="" role="button">Entérate como »</a></p>
 	        </div>
-	        <div class="item">
-	          <img src="images/home-banner.jpg" alt="Hub Educacion">
-	          <div class="container">
-	            <div class="carousel-caption">
-	              <h1>Afíliate y sé parte de nuestra exclusiva red segmentada en educación.</h1>
-	              <a href="#contacto" class="btn btn-lg btn-primary">Entérate como »</a>
-	            </div>
-	          </div>
+	        <div class="item"><img src="images/home-banner.jpg" alt="Hub Educacion">
+	        <h1>Afíliate y sé parte de nuestra exclusiva red segmentada en educación.</h1>
+	              <p><a class="btn btn-lg btn-primary" data-type="1" href="" role="button">Entérate como »</a></p>
 	        </div>
+
 	      </div>
-	      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-	        <span class="glyphicon glyphicon-chevron-left"></span>
-	        <span class="sr-only">Anterior</span>
-	      </a>
-	      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-	        <span class="glyphicon glyphicon-chevron-right"></span>
-	        <span class="sr-only">Siguiente</span>
-	      </a>
-	    </div><!-- /.carousel -->
     </section>
 
     <!-- Home contenido -->
@@ -219,7 +199,7 @@
 			</article>
 
 			<article class="col-xs-12 col-sm-12 col-md-12">
-				<br><br><p><a class="btn btn-primary btn-lg" href="#contacto" role="button">Quiero contratar</a></p><br><br><br>
+				<br><br><p><a class="btn btn-primary btn-lg" data-type="0" href="#contacto" role="button">Quiero contratar</a></p><br><br><br>
 			</article>
 		</div>
 	</section>
@@ -240,24 +220,38 @@
 		</article>
 
 		<article class="col-xs-12 col-sm-4 col-md-4">
-			<a href="#"><img src="images/circulo-qtge.png" alt="..."></a>
-			<h4 class="subtitulo-azul">Que te gustaria estudiar</h4>
-			<p>Portal enfocado en el publico joven que desea informarse y está buscando seguir una profesión técnica o universitaria.</p>
+			<a href="http://www.quetegustariaestudiar.pe/" class="brand" target="_blank">
+				<img src="images/circulo-qtge.png" alt="quetegustariaestudiar.pe">
+				<p>Portal enfocado en el publico joven que desea informarse y está buscando seguir una profesión técnica o universitaria.</p>
+			</a>
+			<h4 class="subtitulo-azul"><a target="_blank" href="http://www.quetegustariaestudiar.pe/">
+				quetegustariaestudiar.pe
+			</a></h4>			
 		</article>
 		<article class="col-xs-12 col-sm-4 col-md-4">
-			<a href="#"><img src="images/circulo-txe.png" alt="..."></a>			
-			<h4 class="subtitulo-azul">Todos por la Educación</h4><br>
-			<p>Iniciativa que busca contribuir congregando y difundiendo las mejores prácticas relacionadas con la lectura y la educación escolar en general.</p>
+			<a href="http://todosporlaeducacion.pe/" class="brand" target="_blank">
+				<img src="images/circulo-txe.png" alt="todosporlaeducacion.pe">
+				<p>Iniciativa que busca contribuir congregando y difundiendo las mejores prácticas relacionadas con la lectura y la educación escolar en general.</p>
+			</a>			
+			<h4 class="subtitulo-azul">
+				<a href="http://todosporlaeducacion.pe/" target="_blank">todosporlaeducacion.pe</a></h4>	<br>
+			
 		</article>
 		<article class="col-xs-12 col-sm-4 col-md-4">
-			<a href="#"><img src="images/circulo-ct.png" alt="..."></a>
-			<h4 class="subtitulo-azul">Cursos Totales</h4><br>
-			<p>Portal enfocado en la oferta de postgrado y cursos de especializacion que asiste a las personas que buscan mejorar profesionalmente.</p>
+			<a href="http://www.cursostotales.com.pe/" class="brand" target="_blank">
+				<img src="images/circulo-ct.png" alt="cursostotales.com.pe">
+				<p>Portal enfocado en la oferta de postgrado y cursos de especializacion que asiste a las personas que buscan mejorar profesionalmente.</p>
+			</a>
+			<h4 class="subtitulo-azul">
+				<a href="http://www.cursostotales.com.pe/" target="_blank">
+					cursostotales.com.pe</a></h4><br>			
 		</article>
-		<article class="col-xs-12 col-sm-12 col-md-12">
-			<br><p><a class="btn btn-primary btn-lg" href="#contacto" role="button">Quiero asociarme</a></p><br>
+		<article class="col-xs-12 col-sm-12 col-md-12">			
+			<br>
+			<br>
 			<h3 class="titulo-azul">¿Interesado en asociarse como medio?</h3><br>
 			<p>Te invitamos a formar parte de nuestra Red Educativa, con la finalidad de comercializar sus espacios publicitarios para toda nuestra red de clientes en todo Latinoamérica, entregando a cambio el prestigio de nuestra red y los más de 300 clientes que tenemos en la región.</p><br><br><br>
+			<a class="btn btn-primary btn-lg" data-type="1" href="#contacto" role="button">Quiero asociarme</a>
 		</article>
 	</section>
 
@@ -412,8 +406,29 @@
 	<script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.18.min.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/custom.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+    $(document).ready(function() {
+      $("#owl-demo").owlCarousel({
+
+      navigation : true,
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem : true
+
+      // "singleItem:true" is a shortcut for:
+      // items : 1, 
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+
+      });
+    });
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    
 </body>
 </html>

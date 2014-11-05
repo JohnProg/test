@@ -7,8 +7,15 @@ body {
 	background-image: url('../images/bg.jpg');
 	background-attachment: fixed;
 }
-a, button {
+a, button, p {
 	transition: all .5s ease-in-out;
+}
+
+.btn-primary {
+	color: #ffffff;
+	background-color: #ff6600;
+	border-color: #e65c00;
+	border-radius: 5px !important;
 }
 
 .container {
@@ -222,19 +229,48 @@ a, button {
 	position: absolute;
 	top: 10em;
 }
-.carousel-caption h1 {
-	width: 90%;
-	margin-top: 3em;
+#home h1 {
+	width: 60%;
+	color: white;
+	background: #4183D7;
+	padding: 10px 15px;
+	text-align: center;
+	position: absolute;
+	top: 7em;
+	left: 3em;
 }
 
-.carousel-caption h1, .carousel-caption p {
-    background: #4183D7;
-    padding: 10px 15px;
-    text-align: center;
+#home .btn-primary {
+    position: absolute;
+    top: 22em;
+    left: 6em;
 }
 
-.carousel-caption p {
+#home p {
 	width: 70%;
+}
+.medios {
+    height: 1000px;
+}
+.brand p {
+    position: absolute;
+    top: 0;
+    color: black;
+    padding: 5.3em 2.5em;
+    left: 47px;
+    background: rgba(233, 233, 239, 0.9);
+    border-radius: 50%;
+    width: 286px;
+    height: 285px;
+    border: 1px solid #e65c00;
+    font-size: 16px;
+    transition: all .5s ease-in-out;    
+    display: none;   
+}
+
+.brand {
+    display: block;
+    border-radius: 50%;
 }
 .carousel-indicators {
     position: absolute;
@@ -267,6 +303,38 @@ a, button {
   top: 0;
   min-width: 100%;
   height: 600px;
+}
+
+
+/*slider*/
+.owl-pagination {
+	top: 2%;
+	position: absolute;
+	right: 0;
+	left: 50%;
+}
+
+.owl-next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.owl-prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.owl-item {
+	position: relative;
+    text-align: center;
+}
+.owl-prev, .owl-next {
+    font-size: 60px !important;
+    background: none !important;
+    color: black !important;
+    margin: 0 0.5em !important;
 }
 
 /* RESPONSIVE CAROUSEL

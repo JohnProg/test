@@ -58,5 +58,23 @@ $(function() {
         alert("Escribe un correo."); 
       } 
   }                 
+  $(".brand").hover(function() {
+      $(this).find("p").fadeTo( "slow", 0.8 ).stop(true, true);
+  }, function() {
+      $(this).find("p").fadeOut(1000).stop(true, true);
+  });
+  $(".btn").on('click', setCurrentOption);
+  function setCurrentOption() {
+    if(this.data("type")) {
+      var type = parseInt(this.attr("type"));
+      $(".type option").eq(type).attr("selected","selected") ;  
+    }    
+  }
+  $(window).scroll(function(){
+      var scrolled = $(window).scrollTop();
+        if(scrolled >= 420){
+        } else if (scrolled < 420){
+        }
+    })
 
 });
