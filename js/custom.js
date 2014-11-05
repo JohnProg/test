@@ -1,5 +1,4 @@
 
-Parse.initialize("HUtHHipJRUxMfJJ0peNNblr7C9NsJnrIFd06Exeh", "qMW5wgmaui65vSksk5FQW2GnqR8ywzNZeubl0lIb"); 
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
