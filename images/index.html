@@ -10,8 +10,6 @@
 		<link href="css/bootstrap.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 
-		<link href="css/owl.carousel.css" rel="stylesheet">
-    	<link href="css/owl.theme.css" rel="stylesheet">
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -42,10 +40,10 @@
                 <li><a href="#medios">Medios</a></li>
                 <li><a href="#equipo">Equipo</a></li>
                 <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#home"><img src="images/ico-peru.png" alt="Peru"> Llama al +511 475 1354</a></li>
+                <li><a href="#home"><img src="images/ico-peru.png" alt="Peru"> Llame al +511 475 1354</a></li>
               </ul>
             </div>
-            <a href="#contacto" data-type="2" class="btn btn-primary">Solicita una visita</a>
+            <a href="#contacto" class="btn btn-success">Solicite una visita</a>            
           </form>
         </div><!--/.navbar-collapse -->
       </div>
@@ -60,18 +58,40 @@
 
     <!-- Home -->
     <section id="home">
-    	<div id="owl-demo" class="owl-carousel">
-
-	        <div class="item"><img src="images/home-banner.jpg" alt="Hub Educacion">
-	        	<h1>Mejores resultados con un alto valor. El mejor CPA para el mercado educativo</h1>
-              	<p><a class="btn btn-lg btn-primary" data-type="0" href="" role="button">Entérate como »</a></p>
+	    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+	      <ol class="carousel-indicators">
+	        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+	      </ol>
+	      <div class="carousel-inner" role="listbox">
+	        <div class="item active">
+	          <img src="images/home-banner.jpg" alt="Hub Educacion">
+	          <div class="container">
+	            <div class="carousel-caption">	              
+	              <h1>Mejores resultados con un alto valor. El mejor CPA para el mercado educativo</h1>
+	              <a href="#contacto" class="btn btn-lg btn-primary" href="" role="button">Entérate como »</a>	              
+	            </div>
+	          </div>
 	        </div>
-	        <div class="item"><img src="images/home-banner.jpg" alt="Hub Educacion">
-	        <h1>Afíliate y sé parte de nuestra exclusiva red segmentada en educación.</h1>
-	              <p><a class="btn btn-lg btn-primary" data-type="1" href="" role="button">Entérate como »</a></p>
+	        <div class="item">
+	          <img src="images/home-banner.jpg" alt="Hub Educacion">
+	          <div class="container">
+	            <div class="carousel-caption">
+	              <h1>Afiliese a nuestra red y sea parte de nuestra exclusiva network segmentada en educación.</h1>	             	
+	              <a href="#contacto" class="btn btn-lg btn-primary">Entérate como »</a>
+	            </div>
+	          </div>
 	        </div>
-
 	      </div>
+	      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+	        <span class="glyphicon glyphicon-chevron-left"></span>
+	        <span class="sr-only">Anterior</span>
+	      </a>
+	      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+	        <span class="glyphicon glyphicon-chevron-right"></span>
+	        <span class="sr-only">Siguiente</span>
+	      </a>
+	    </div><!-- /.carousel -->
     </section>
 
     <!-- Home contenido -->
@@ -80,13 +100,13 @@
 			<article class="row">
 				<div class="col-lg-4">
 					<img class="img-circle" src="images/home-presencia.png" alt="Mator Red Educativa" style="width: 175px; height: 175px;">
-					<h2 class="titulo-azul">Red en 7 países</h2>
-					<p>Contamos con presencia en Argentina, Chile, Perú, Ecuador, Colombia, Mexico y España.</p>
+					<h2 class="titulo-azul">7 Paises</h2>
+					<p>Nuestra Red tiene presencia en Argentina, Chile, Perú, Ecuador, Colombia, Mexico y España.</p>
 				</div>
 				<div class="col-lg-4">
 					<img class="img-circle" src="images/home-busquedas.png" alt="Millones de busquedas" style="width: 175px; height: 175px;">
-					<h2 class="titulo-azul">6 millones de búsquedas</h2>
-					<p>Más de 6 millones de personas activas en busca de cursos, diplomados, maestrías, MBA, entre otras materias educativas.</p>
+					<h2 class="titulo-azul">6 Millones de búsquedas</h2>
+					<p>Más de 6'000,000 de personas buscan de manera activa Cursos, Diplomados, Maestrias, MBA, entre otras materias educativas.</p>
 				</div>
 				<div class="col-lg-4">
 					<img class="img-circle" src="images/home-red.png" alt="Alcance Regional" style="width: 175px; height: 175px;">
@@ -103,30 +123,31 @@
 			<article class="row">
 				<div class="col-lg-12">
 					<br><br><a href="#" ><img src="images/hube-logo.png" class="img-responsive" alt="HUB Educación"></a><br>
-		  			<h2>Somos la red de portales educativos más importante en América Latina, con presencia activa en 7 países y más de 6 millones de visitas de un público 100% interesado en estudiar de manera virtual y presencial, desde cursos cortos hasta maestrías de las más diversas especialidades.</h2><br>
+		  			<h2 class="titulo-blanco">Somos la mayor red enfocada en el sector educativo para la región.</h2>
+		  			<p>HUB Educación es la Red de portales orientados al sector educativo más importante en Latinoamérica. Contamos con presencia activa en 7 países y recibimos más de 6 millones de visitas de público interesado en estudiar desde cursos cortos hasta maestrías de las más diversas especialidades, tanto de manera presencial como virtual.</p><br>
 		  			<h2 class="titulo-blanco">Lo que hacemos</h2>
-		  			<p>En HUB Educación generamos constantemente información relacionada con la oferta educativa disponible en cada país, utilizada a modo de guía para proporcionar las mejores alternativas disponibles en cursos a cada uno de nuestros usuarios.</p>
+		  			<p>HUB Educación, a través de sus portales web cursostotales.com, quetegustariaestudiar.pe y todosporlaeducacion.pe, genera información constante relacionada con la oferta educativa disponible en cada país. Dicha información es utilizada por el equipo a modo de guía para proporcionar las mejores alternativas disponibles en cursos a cada uno de los usuarios interesados.</p>
 				</div>
 			</article>
 			<article class="col-xs-12 col-sm-4 col-md-3">
 			<h2 class="glyphicon glyphicon-transfer"></h2>
-				<p>Nuestras áreas se enfocan en dos grupos de interés: instituciones educativas y público en general.</p>
+				<p>HUB Educación cuenta con diversas áreas enfocadas en dos grupos de interés: instituciones que ofrecen cursos y público interesado en ellos.</p>
 			</article>
 			<article class="col-xs-12 col-sm-4 col-md-2">
 				<h2 class="glyphicon glyphicon-user"></h2>
-				<p>Área de Gestión Humana: actualización de ofertas educativas.</p>
+				<p>Área de Gestión Humana: encargada de gestionar la actualización de las ofertas educativas.</p>
 			</article>
 			<article class="col-xs-12 col-sm-4 col-md-2">
 				<h2 class="glyphicon glyphicon-earphone"></h2>
-				<p>Área de Atención: Call Center integrado que valida consultas de quienes nos contactan.</p>
+				<p>Call Center: integrado por personal 100% calificado que valida las consultas e interés de quienes nos contactan.</p>
 			</article>
 			<article class="col-xs-12 col-sm-6 col-md-2">
 				<h2 class="glyphicon glyphicon-volume-up"></h2>
-				<p>Área de Difusión: orientación vocacional en visitas periódicas a colegios.</p>
+				<p>Área de Difusión: gestionan visitas periódicas a colegios para brindar más información acerca de orientación vocacional.</p>
 			</article>
 			<article class="col-xs-12 col-sm-6 col-md-3">
 				<h2 class="glyphicon glyphicon-thumbs-up"></h2>
-				<p>Área Comercial: provisión de servicios de calidad de manera contínua.</p>
+				<p>Área Comercial: enfocada en proveer servicios de calidad de manera contínua.</p>
 			</article>
 		</section>
 	</div>
@@ -134,7 +155,7 @@
     <!-- Servicios banner-->
     <section class="servicios-banner" id="servicios">
     	<div class="container">
-			<h3 class="titulo-banner">Nos convertimos en socios de nuestros clientes, convirtiendo sus metas comerciales en altas tasas de ROI.</h3>
+			<h3 class="titulo-banner">A través del despliegue de diversas acciones online en portales propios y de terceros, nos convertimos en socios de nuestros clientes, tomando como propias sus metas comerciales con la intención de generar una alta tasa de Return of Investment (ROI).</h3>
     	</div>		
     </section>
 
@@ -147,21 +168,21 @@
 		<article class="col-xs-12 col-sm-4 col-md-4">
 			<div class="servicios-caja">
 				<h4 class="servicios-caja-titulo">Fortalecer la imagen</h4><br>
-				<p>Banners (CPM), publicidad en redes sociales y resultados en buscadores (SEO), garantizan el fortalecimiento del branding de nuestros clientes.</p><br>
+				<p>Para el objetivo de Branding contamos con Banners (CPM), anuncios en redes sociales y en resultados de buscadores. Todo pensado en fortalecer su imagen. Su marca destacada.</p><br>
 				<img src="images/servicio-01.png" alt="">
 			</div>
 		</article>
 		<article class="col-xs-12 col-sm-4 col-md-4">
 			<div class="servicios-caja">
 				<h4 class="servicios-caja-titulo">Aumentar las ventas</h4><br>
-				<p>Performance optimizada basada en generación de bases de datos de usuarios 100% interesados en el producto de nuestros clientes.</p><br>
+				<p>Obtención de los datos de contacto de interesados en sus programas educactivos. Performance pura, filtrado por nuestro equipo de call center.</p><br>
 				<img src="images/servicio-02.png" alt="">
 			</div>
 		</article>
 		<article class="col-xs-12 col-sm-4 col-md-4">
 			<div class="servicios-caja">
 				<h4 class="servicios-caja-titulo">Servicios complementarios</h4><br>
-				<p>Servicios de e-mail marketing y Call Center que amplifican el alcance de las acciones de nuestros clientes.</p><br><br>
+				<p>Contamos también con servicios de emailing y call center. Amplie y verifique el alcance de sus acciones.</p><br><br>
 				<img src="images/servicio-03.png" alt="">
 				</div>
 		</article>
@@ -182,13 +203,13 @@
 			<article class="col-xs-12 col-sm-6 col-md-3">
 				<div class="productos-caja">
 				<img src="images/producto-banner.png" alt="">
-				<h4>Compras por CPM (banners)</h4>
+				<h4>Compra de banners (CPM)</h4>
 				</div>
 			</article>
 			<article class="col-xs-12 col-sm-6 col-md-3">
 				<div class="productos-caja">
 				<img src="images/producto-email.png" alt="">
-				<h4>E-mail marketing</h4><br>
+				<h4>Email marketing</h4><br>
 				</div>
 			</article>
 			<article class="col-xs-12 col-sm-6 col-md-3">
@@ -199,7 +220,7 @@
 			</article>
 
 			<article class="col-xs-12 col-sm-12 col-md-12">
-				<br><br><p><a class="btn btn-primary btn-lg" data-type="0" href="#contacto" role="button">Quiero contratar</a></p><br><br><br>
+				<br><br><p><a class="btn btn-primary btn-lg" href="#contacto" role="button">Quiero contratar</a></p><br><br><br>
 			</article>
 		</div>
 	</section>
@@ -215,42 +236,29 @@
     <section class="medios container">
 		<article class="col-xs-12 col-sm-12 col-md-12">
 			<br><br><br><h2 class="titulo-azul">Medios</h2>
-			<h3>Portales que conforman HUB Educación</h3><br>
+			<h3>Portales que conforman HUB Educación</h3>
+			<p>Conozca más acerca de nuetros asociados. Lo invitamos a conocer nuestros portales web:</p><br>
 		</article>
 
 		<article class="col-xs-12 col-sm-4 col-md-4">
-			<a href="http://www.quetegustariaestudiar.pe/" class="brand" target="_blank">
-				<img src="images/circulo-qtge.png" alt="quetegustariaestudiar.pe">
-				<p>Portal enfocado a jóvenes en busca de información acerca de carreras profesionales y técnicas disponibles en el mercado.</p>
-			</a>
-			<h4 class="subtitulo-azul"><a target="_blank" href="http://www.quetegustariaestudiar.pe/">
-				quetegustariaestudiar.pe
-			</a></h4>			
+			<a href="#"><img src="images/circulo-qtge.png" alt="..."></a>
+			<h4 class="subtitulo-azul">Que te gustaria estudiar</h4>
+			<p>Portal enfocado en el publico joven que desea informarse y está buscando seguir una profesión técnica o universitaria.</p>
 		</article>
 		<article class="col-xs-12 col-sm-4 col-md-4">
-			<a href="http://todosporlaeducacion.pe/" class="brand" target="_blank">
-				<img src="images/circulo-txe.png" alt="todosporlaeducacion.pe">
-				<p>Iniciativa que busca contribuir a la educación en Perú, congregando y difundiendo las mejores prácticas relacionadas con la lectura y la educación escolar en general.</p>
-			</a>			
-			<h4 class="subtitulo-azul">
-				<a href="http://todosporlaeducacion.pe/" target="_blank">todosporlaeducacion.pe</a></h4>	<br>
-			
+			<a href="#"><img src="images/circulo-txe.png" alt="..."></a>			
+			<h4 class="subtitulo-azul">Todos por la Educación</h4><br>
+			<p>Iniciativa que busca contribuir congregando y difundiendo las mejores prácticas relacionadas con la lectura y la educación escolar en general.</p>
 		</article>
 		<article class="col-xs-12 col-sm-4 col-md-4">
-			<a href="http://www.cursostotales.com.pe/" class="brand" target="_blank">
-				<img src="images/circulo-ct.png" alt="cursostotales.com.pe">
-				<p>Portal enfocado en la oferta de postgrado y cursos de especializacion que asiste a las personas que buscan mejorar profesionalmente.</p>
-			</a>
-			<h4 class="subtitulo-azul">
-				<a href="http://www.cursostotales.com.pe/" target="_blank">
-					cursostotales.com.pe</a></h4><br>			
+			<a href="#"><img src="images/circulo-ct.png" alt="..."></a>
+			<h4 class="subtitulo-azul">Cursos Totales</h4><br>
+			<p>Portal enfocado en la oferta de postgrado y cursos de especializacion que asiste a las personas que buscan mejorar profesionalmente.</p>
 		</article>
-		<article class="col-xs-12 col-sm-12 col-md-12">			
-			<br>
-			<br>
+		<article class="col-xs-12 col-sm-12 col-md-12">
+			<br><p><a class="btn btn-primary btn-lg" href="#contacto" role="button">Quiero asociarme</a></p><br>
 			<h3 class="titulo-azul">¿Interesado en asociarse como medio?</h3><br>
 			<p>Te invitamos a formar parte de nuestra Red Educativa, con la finalidad de comercializar sus espacios publicitarios para toda nuestra red de clientes en todo Latinoamérica, entregando a cambio el prestigio de nuestra red y los más de 300 clientes que tenemos en la región.</p><br><br><br>
-			<a class="btn btn-primary btn-lg" data-type="1" href="#contacto" role="button">Quiero asociarme</a>
 		</article>
 	</section>
 
@@ -279,6 +287,7 @@
 					<h4><em>Angelo Olcese - Gerente General<br>
 					Formación Integral y Desarrollo Empresarial - FIDE</em></h4>
 				</div>
+
 			</article>
 			<article class="cliente col-xs-12 col-sm-12 col-md-12">
 				<div class="texto col-xs-12 col-sm-6 col-md-6">
@@ -293,6 +302,8 @@
 				</div>
 
 			</article>
+
+
 				<article class="col-xs-12 col-sm-12 col-md-12">
 				<br><br><br><br>
 			</article>
@@ -308,23 +319,23 @@
 
 			<article class="col-xs-12 col-sm-3 col-md-3">
 				<a href="#" ><img src="images/arnaud.png" alt="Arnaud"></a>
-				<br><br><h3 class="subtitulo-azul">Arnaud Rijkeboer</h3><small>Chief Executive Officer</small>
-				<br><br><p>Graduado en Negocios (MSc) por Tilburg University (Holanda, 2003), con profundo interés en innovación, tecnología y finanzas. Gerente estratégico y operativo de la red, coordina actividades diarias en pro de alcanzar los objetivos planteados.</p>
+				<br><br><h2 class="subtitulo-azul">Arnaud Rijkeboer</h3><small>Chief Executive Officer</small>			
+				<br><br><p>Graduado en negocios (MSc) por Tilburg University (Holanda, 2003) con interés en innovación, tecnología y finanzas. Se encarga de la gerencia estrategica y operativa de la red, coordinando las actividades diarias para alcanzar los objetivos planteados.</p>
 			</article>
 			<article class="col-xs-12 col-sm-3 col-md-3">
 				<a href="#" ><img src="images/jorge.png" alt="Silvana"></a>
-				<br><br><h3 class="subtitulo-azul">Jorge Mateljan</h3><small>Chief Commercial Officer</small>
-				<br><br><p>Graduado en Administración de Empresas por la Universidad del Pacífico (Lima, 2000) y MBA por la ESPM (Brasil, 2005). Es pieza clave del área comercial y expansión a otros países, y tiene a su cargo la creación de procesos para la mejora de la operación comercial y el vínculo con los usuarios de los portales.</p>
+				<br><br><h2 class="subtitulo-azul">Jorge Mateljan</h3><small>Chief Comercial Officer</small>
+				<br><br><p>Administrador de Empresas por la Universidad del Pacífico (Lima, 2000) y MBA por la ESPM (Brasil, 2005), está encargado de la parte comercial y expansión a otros países. Se encarga además de la creación de procesos para la mejora de la operación comercial y el vinculo con los usuarios de los portales.</p>
 			</article>
 			<article class="col-xs-12 col-sm-3 col-md-3">
 				<a href="#" ><img src="images/miguel.png" alt="Miguel Cachay"></a>
-				<br><br><h3 class="subtitulo-azul">Miguel Cachay</h3><small>Country Manager</small>
-				<br><br><p>Graduado en Administración de Empresas por la USMP con especialidad en Negocios Internacionales y Gerencia de Marketing en el IPP y CENTRUM Católica. Lidera la red en Perú, implementando acciones para el correcto funcionamiento y crecimiento de la operación.</p>
+				<br><br><h2 class="subtitulo-azul">Miguel Cachay</h3><small>Country Manager Perú</small>
+				<br><br><p>Graduado en Administración de Empresas por la USMP con especialidad en Negocios Internacionales y Gerencia de Marketing en el IPP y CENTRUM Católica, con más de 8 años de experiencia en negocios y publicidad digital en Perú, docente de diversas instituciones de Marketing. Lidera la operación en Perú implementando las acciones necesarias para el funcionamiento y crecimiento de la operación.</p>
 			</article>
 			<article class="col-xs-12 col-sm-3 col-md-3">
 				<a href="#" ><img src="images/silvana.png" alt="Silvana"></a>
-				<br><br><h3 class="subtitulo-azul">Silvana Loloy</h3><small>Key Account Manager</small>
-				<br><br><p>Graduada en Administración por la Universidad de Lima (Perú, 2014). Encargada del seguimiento y la implementación necesarios a cada cliente institucional, manteniendo el vínculo y asegurando una relación positiva con cada uno de ellos.</p>
+				<br><br><h2 class="subtitulo-azul">Silvana Loloy</h3><small>Key Account Manager</small>
+				<br><br><p>Graduada en Adminsitración por la Universidad de Lima (Perú, 2014), Silvana se encarga del seguimiento e implementación con cada cliente institucional. Mantiene el vinculo diario y asegura que la relación con cada uno sea la mejor posible.</p>
 			</article>
 		</div>
 	</section>
@@ -333,13 +344,13 @@
 	<section class="contacto-container" id="contacto">
 		<div class="container">
 			<article class="col-xs-12 col-sm-12 col-md-12">
-				<h2 class="titulo-blanco">Contáctanos</h2><br><br>
+				<h2 class="titulo-blanco">Contáctese</h2><br><br>
 			</article>
 			<article class="col-xs-12 col-sm-12 col-md-6">
 			   	<select class="type form-control">
-  					<option>Anunciante</option>
-  					<option>Medio</option>
-  					<option>Otro</option>
+  					<option>Soy Anunciante</option>
+  					<option>Soy Medio</option>
+  					<option>Soy Otro</option>
 				</select>	
 				<br>
 				<div class="input-group">
@@ -374,9 +385,9 @@
 	<footer class="footer-h">
 		<section class="container">
 			<div class="row">
-				<div class="col-lg-4"><a href="http://www.cursostotales.com">www.cursostotales.com</a></div>
-				<div class="col-lg-4"><a href="http://www.todosporlaeducacion.com">www.todosporlaeducacion.com</a></div>
-				<div class="col-lg-4"><a href="http://www.quetegustariaestudiar.pe">www.quetegustariaestudiar.pe</a></div>
+				<div class="col-lg-4"><a href="http://www.cursostotales.com">cursostotles.com</a></div>
+				<div class="col-lg-4"><a href="http://www.todosporlaeducacion.com">todosporlaeducacion.com</a></div>
+				<div class="col-lg-4"><a href="http://www.quetegustariaestudiar.pe">quetegustariaestudiar.pe</a></div>
 			</div>
 			<div class="row"><br></div>
 			<div class="row">
@@ -404,29 +415,8 @@
 	<script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.18.min.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.js"></script>
     <script src="js/custom.js"></script>
-    <script>
-    $(document).ready(function() {
-      $("#owl-demo").owlCarousel({
-
-      navigation : true,
-      slideSpeed : 300,
-      paginationSpeed : 400,
-      singleItem : true
-
-      // "singleItem:true" is a shortcut for:
-      // items : 1, 
-      // itemsDesktop : false,
-      // itemsDesktopSmall : false,
-      // itemsTablet: false,
-      // itemsMobile : false
-
-      });
-    });
-    </script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
