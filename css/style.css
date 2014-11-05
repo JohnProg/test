@@ -22,7 +22,9 @@ a, button, p {
 	text-align: center;
 	height: 40%;
 }
-
+a.active {
+    color: #ffffff !important; background-color: #ff6600; border-color: #e65c00; border-radius: 5px !important;
+}
 
 .navbar-fixed-top {
 	border-top-color: #FF6600;
@@ -258,7 +260,7 @@ a, button, p {
     color: black;
     padding: 5.3em 2.5em;
     left: 47px;
-    background: rgba(233, 233, 239, 0.9);
+    background: white;
     border-radius: 50%;
     width: 286px;
     height: 285px;
