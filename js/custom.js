@@ -1,5 +1,15 @@
-
-$(function() {
+$(document).on('ready', init);
+function init () {
+      $( "#home h1" ).animate({ opacity: 1, left: "3em"},  800);
+      $( "#home a" ).animate({ opacity: 1, left: "5.3em", top: "20em"});
+    $(".owl-prev").on("click", function() {
+        $("#home h1" ).animate({ opacity: 1, left: "3em"},  800);
+        $( "#home a" ).animate({ opacity: 1, left: "5.3em"});
+    });
+    $(".owl-next").on("click", function() {
+        $( "#home h1" ).animate({ opacity: 1, left:"35%", right: "1em"},  800);
+        $( "#home a" ).animate({ opacity: 1, left:"35%"});
+    });
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -101,5 +111,4 @@ $(function() {
           $(".navbar-nav a").eq(4).addClass("active");
         }
   });
-
-});
+}
