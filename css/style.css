@@ -178,7 +178,7 @@ a.active, a.active:hover  {
 	padding-bottom: 5%;
 	background-color: #19B5FE;
 	opacity: 0.8;
-	color:#fff;
+	
 }
 
 .productos-caja {
@@ -235,10 +235,11 @@ a.active, a.active:hover  {
 }
 
 .clientes-container > .container {
-    background: #4183D7;
+    background: #19B5FE;
     margin: 0;
     width: 100%;
     padding-bottom: 3em;
+    opacity: 0.7;
 }
 
 .equipo-container {
@@ -411,7 +412,6 @@ a.active, a.active:hover  {
 .cliente {
 	margin-top: 2em;
 	padding-top: 1em;
-    background: #4183D7;
 /*    border-bottom: 10px solid white;
     margin: 1em;
     color: white;*/
@@ -422,14 +422,12 @@ a.active, a.active:hover  {
 }
 .cliente .texto {
 	margin-top: 1.5em;
-	text-align: left;
-	color: #fff;
+	text-align: left;	
 }
 
 .cliente .firma {
 	margin-top: 1.5em;
-	text-align: right;
-	color: #fff;
+	text-align: right;	
 }
 
 
