@@ -456,6 +456,10 @@ a.active, a.active:hover  {
 	}
  	.navbar-form{
  		width: 88%;
+ 		text-align: right;
+ 	}
+ 	.navbar-form .btn {
+ 		margin-right: 13px;
  	}
  	.navbar-header img {
  		width: 100px;
