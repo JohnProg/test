@@ -34,7 +34,9 @@ function init () {
    $("#sendMessage").on('click', sendMessage);
    function sendMessage(e){
       e.preventDefault(); 
+      Parse.initialize("HUtHHipJRUxMfJJ0peNNblr7C9NsJnrIFd06Exeh", "qMW5wgmaui65vSksk5FQW2GnqR8ywzNZeubl0lIb"); 
       var TestObject = Parse.Object.extend("TestObject");
+
       var testObject = new TestObject(); 
       var data = {
         type: $('.type').val(),

@@ -27,6 +27,9 @@ a, button, p {
     top: initial;
     left: 0;
 }
+.owl-pagination {
+	display: none;
+}
 
 #owl-demo2 .owl-page.active span {
     background: white;
@@ -103,7 +106,7 @@ a.active, a.active:hover  {
 	margin-top: -90px;
 	text-align: center;
 }
-#somos .img-responsive {
+#somos .img-responsive, footer .img-responsive {
 	margin: 0 auto;
 }
 .somos-container {
@@ -121,11 +124,10 @@ a.active, a.active:hover  {
 	background-image: url('../images/servicios-banner.jpg');
 	background-repeat: no-repeat;
 	background-color: #000;
-	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
 	position: relative;
-	width: auto;
+	width: 100%;
 	height: 600px;
 }
 
@@ -192,7 +194,6 @@ a.active, a.active:hover  {
 	background-repeat: no-repeat;
 	background-color: #000;
 	background-position: center;
-	background-attachment: fixed;
 	background-size: cover;
 	position: relative;
 	width: auto;
@@ -203,7 +204,6 @@ a.active, a.active:hover  {
 	background-repeat: no-repeat;
 	background-color: #000;
 	background-position: center;
-	background-attachment: fixed;
 	background-size: cover;
 	position: relative;
 	width: auto;
@@ -291,58 +291,27 @@ a.active, a.active:hover  {
     height: 1000px;
 }
 .brand p {
-    position: absolute;
-    top: 0;
-    color: black;
-    padding: 5.3em 2.5em;
-    left: 47px;
-    background: white;
-    border-radius: 50%;
-    width: 286px;
-    height: 285px;
-    border: 1px solid #e65c00;
-    font-size: 16px;
-    transition: all .5s ease-in-out;    
-    display: none;   
+	position: absolute;
+	top: 0;
+	color: black;
+	padding: 5.3em 2.5em;
+	left: 0;
+	background: white;
+	border-radius: 50%;
+	width: 286px;
+	height: 285px;
+	border: 1px solid #e65c00;
+	font-size: 16px;
+	transition: all .5s ease-in-out;
+	display: none;
+	right: 0;
+	margin: 0 auto;  
 }
 
 .brand {
     display: block;
     border-radius: 50%;
 }
-.carousel-indicators {
-    position: absolute;
-    right: 0;
-    margin: 0;
-    width: 70%;
-    left: 0;
-}
-
-.carousel-control , .carousel-indicators {
-    display: none;
-}
-.carousel-caption .btn {
-    left: 0;
-    position: absolute;
-    width: 10em;
-    font-size: 27px;
-    border-radius: 0;
-    font-weight: 600;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 600px;
-  min-width: 100%;
-  background-color: #d6e5ea;
-}
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  min-width: 100%;
-  height: 600px;
-}
-
 
 /*slider*/
 .owl-pagination {
@@ -375,13 +344,6 @@ a.active, a.active:hover  {
     margin: 0 0.5em !important;
 }
 
-/* RESPONSIVE CAROUSEL
-
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    font-size: 21px;
-    line-height: 1.0;
-  }
 
   * {
     text-shadow: none !important;
@@ -445,45 +407,59 @@ a.active, a.active:hover  {
 	color: #fff;
 }
 
-/* RESPONSIVE CAROUSEL
 
-  /* Bump up size of carousel content */
-  .carousel-caption p {    
-    font-size: 21px;
-    line-height: 1.0;
-  }
-
- @media (max-width: 1024px) {
- 	.servicios-banner, 
-	.medios-banner,
-	.clientes-banner {
-		background-size: contain;
+ @media (min-width: 1025px) {
+	.servicios-banner, .medios-banner, .clientes-banner {
+		background-attachment: fixed;
 	}
-	#home .owl-prev. .owl-next {
+ }
+ @media (max-width: 1024px) {
+ 	.cliente .firma {
+		margin-top: 7.5em;
+	}
+	#home .owl-prev, #home .owl-next {
 		top: 3.5em;
 	}
 	#home .owl-item .item {
 		margin-top: 2em;
 	}
+	#owl-demo {
+		height: 650px;
+	}
  }
  @media (max-width: 768px) {
- 	#home .owl-prev. .owl-next {
-		top: 2.5em;
+ 	.cliente em {
+		font-size: 16px;
+	}
+ 	.brand {
+ 		text-decoration: none !important;
+ 	}
+ 	.brand p {
+ 		width: 100%;
+		border: none !important;
+		opacity: 1 !important;
+		background: none;
+		padding-top: 30px !important;
+		padding-bottom: 5px !important;
+		position: relative !important;
+		display: block !important;
+		height: 10%;
+ 	}
+ 	.cliente .firma {
+		margin-top: 10.5em;
+	}
+ 	#owl-demo {
+		height: 540px;
+	}
+ 	#home .owl-prev, #home .owl-next {
+		top: 3em;
 	}
  	.navbar-form{
- 		width: 85%;
+ 		width: 88%;
  	}
  	.navbar-header img {
  		width: 100px;
  	}
- 	.servicios-banner, 
-	.medios-banner,
-	.clientes-banner {
-		background-size: cover;
-	}
-	.cliente {
-		width: 90%;
-	} 	
 	.medios img {
 	    width: 14em;
 	}
@@ -498,24 +474,42 @@ a.active, a.active:hover  {
 	}
 	#home h1 {
 	    width: 70%;
-		top: 4em;
+		top: 8em !important;
 		font-size: 22px;
-		left: 0;
+		left: -1.5em !important;
 		right: 0;
 		margin: 0 auto;
 	}
-	#home .btn {
-		top: 9em;
+	#home p a {
+		top: 15em !important;
 		left: 5.15em;
 	}
 	.servicios-banner, .medios-banner, .clientes-banner {
  		height: 700px;
  	}
-	.container {
- 		height: 50%;
- 	}
+ 	.medios {
+		height: 100%;
+		padding-bottom: 3em;
+	}
  }
  @media (max-width: 600px) {
+ 	div#navbar {
+	    border-bottom: 1px solid rgb(192, 181, 181);
+	    padding-bottom: 10px;
+	}
+ 	.navbar-form {
+		width: 100%;
+		margin: 0;
+	}
+ 	#owl-demo {
+		height: 350px;
+	}
+ 	.cliente {
+ 		height: 600px;
+ 	}
+ 	.cliente .firma {
+		margin-top: 0;
+	}	
  	#home h1 {
 	    width: 70%;
 		top: 2em;
@@ -525,28 +519,37 @@ a.active, a.active:hover  {
 		margin: 0 auto;
 	}
 	#home .btn {
-		top: 5em;
+		top: 8em !important;
 		left: 5.15em;
 	}
- 	.carousel-caption {
- 		width: 90%;
-		left: 0;
-		right: 0;
-		margin: 0 auto;
- 	}
- 	.container {
- 		height: 20%;
- 	}
- 	.servicios-banner, .medios-banner, .clientes-banner {
- 		height: 600px;
- 	}
- 	.carousel-inner > .item > img {
-		max-width: none;
-		height: 450px;
-		width: 160%;
-		left: -10em;
+	#home .owl-prev, #home .owl-next {
+		top: 2em !important;
+		margin: 0 !important;
+		font-size: 40px !important;
+
 	}
-	.carousel-inner {
-		height: 450px;
+ }
+ @media(max-width: 320px) {
+ 	.brand img {
+	    width: 150px;
+	}
+
+	#home .owl-item img {
+	    height: 45%; 
+	    width: 120%; 
+	    max-width: none; 
+	    position: absolute;
+	}
+	.cliente em {
+		font-size: 12px;
+	}
+	#home h1 {
+		left: 0 !important;
+	}
+	#home .btn  {
+		width: 70%;
+		left: 0 !important;
+		margin: 1em auto;
+		right: 0;
 	}
  }
