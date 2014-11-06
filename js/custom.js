@@ -1,15 +1,23 @@
 $(document).on('ready', init);
 function init () {
   scrollAnimationMenu();
-      $( "#home h1" ).animate({ opacity: 1, left: "3em"},  800);
+      $( "#home h1" ).animate({ opacity: 1, left: "3em"},  0);
       $( "#home a" ).animate({ opacity: 1, left: "5.3em", top: "20em"});
-    $(".owl-prev").on("click", function() {
-        $("#home h1" ).animate({ opacity: 1, left: "3em"},  800);
-        $( "#home a" ).animate({ opacity: 1, left: "5.3em"});
+    $(".owl-prev").on("click", function() {        
+        $("#home h1").css("opacity", 0);
+        $("#home h1" ).animate({ opacity: 0, left: "3em", top: "7em"},  0, function() {
+          $(this).css("opacity", 1);
+        });
+        $( "#home a" ).animate({ opacity: 0, left: "5.3em", top: "20em"}, function() {
+          $(this).css("opacity", 1);
+        });
     });
     $(".owl-next").on("click", function() {
-        $( "#home h1" ).animate({ opacity: 1, left:"35%", right: "1em"},  800);
-        $( "#home a" ).animate({ opacity: 1, left:"35%"});
+        $("#home h1" ).css("opacity", 0);
+        $("#home a" ).css("opacity", 0);
+
+        $( "#home h1" ).animate({ opacity: 1, left:"35%", right: "1em", top: "4em"},  0);
+        $( "#home a" ).animate({ opacity: 1, left:"35%", top: "15em"});
     });
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -54,7 +62,7 @@ function init () {
             success: function(object) {
               $('#myModal1').modal('show'); 
               $("#myModal1 .modal-header .modal-title").html('<div class="row"><p class="col-lg-10 text-center">Aviso</p></div>'); 
-              $("#myModal1 .modal-body").html('<div class="row"><p class="col-lg-10 text-center">Felicidades. tu correo ha sido enviado satisfactoriamente.</p></div>'); 
+              $("#myModal1 .modal-body").html('<div class="row"><p class="col-lg-10 text-center">Tu mensaje se ha enviado con éxito.</p></div>'); 
               $('.name').val('').focus(); 
               $('.email').val('');
               $('.comment').val('');
@@ -72,7 +80,7 @@ function init () {
       } 
   }                 
   $(".brand").hover(function() {
-      $(this).find("p").fadeTo( "slow", 0.8 ).stop(true, true);
+      $(this).find("p").fadeTo( "slow", 0.9 ).stop(true, true);
   }, function() {
       $(this).find("p").fadeTo( "slow", 0 ).stop(true, true);
   });

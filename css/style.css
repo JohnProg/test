@@ -19,15 +19,20 @@ a, button, p {
 #home .owl-item .item {
     height: 600px;
 }
-#owl-demo2 .owl-buttons {
-	display: none;
+#owl-demo2 .owl-prev {
+	left: -1em;
 }
+
+#owl-demo2 .owl-next {
+	right: -1em;
+}
+
 #owl-demo2 .owl-pagination {
     bottom: 0;
     top: initial;
     left: 0;
 }
-.owl-pagination {
+#home .owl-pagination {
 	display: none;
 }
 
@@ -165,7 +170,9 @@ a.active, a.active:hover  {
 	background-color: #19B5FE;
 	opacity: 0.7;
 }
-
+.productos-caja h4 {
+    color: rgb(29, 27, 27);
+}
 .hacemos-container {
 	padding-top: 5%;
 	padding-bottom: 5%;
@@ -223,9 +230,15 @@ a.active, a.active:hover  {
 	height: 600px;
 }
 
-.clientes-container {
-	padding-top: 30px;
+.clientes-container {	
 	padding-bottom: 30px;
+}
+
+.clientes-container > .container {
+    background: #4183D7;
+    margin: 0;
+    width: 100%;
+    padding-bottom: 3em;
 }
 
 .equipo-container {
@@ -386,7 +399,7 @@ a.active, a.active:hover  {
     z-index: 1;
     top: 0;
 }
-.cliente:before {
+/*.cliente:before {
 	content: "";
 	position: absolute;
 	width: 100%;
@@ -394,7 +407,7 @@ a.active, a.active:hover  {
 	top: -2px;
 	left: 0;
 	height: 2px;
-}
+}*/
 .cliente {
 	margin-top: 2em;
 	padding-top: 1em;
