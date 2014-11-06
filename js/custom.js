@@ -1,5 +1,6 @@
 $(document).on('ready', init);
 function init () {
+  scrollAnimationMenu();
       $( "#home h1" ).animate({ opacity: 1, left: "3em"},  800);
       $( "#home a" ).animate({ opacity: 1, left: "5.3em", top: "20em"});
     $(".owl-prev").on("click", function() {
@@ -80,8 +81,8 @@ function init () {
     var type = parseInt($(this).data("type"));
     $(".type option").eq(type).attr("selected","selected") ;     
   }
-  $(window).scroll(function(){
-      var scrolled = $(window).scrollTop();
+  function scrollAnimationMenu () {
+    var scrolled = $(window).scrollTop();
       section1 = $(".section-container").eq(0),
         section2 = $(".section-container").eq(1),
         section3 = $(".section-container").eq(2),
@@ -112,5 +113,6 @@ function init () {
           $("a").removeClass("active");
           $(".navbar-nav a").eq(4).addClass("active");
         }
-  });
+  }
+  $(window).scroll(scrollAnimationMenu);
 }
