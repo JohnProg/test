@@ -4,20 +4,12 @@ function init () {
       $( "#home h1" ).animate({ opacity: 1, left: "3em"},  0);
       $( "#home a" ).animate({ opacity: 1, left: "5.3em", top: "20em"});
     $(".owl-prev").on("click", function() {        
-        $("#home h1").css("opacity", 0);
-        $("#home h1" ).animate({ opacity: 0, left: "3em", top: "7em"},  0, function() {
-          $(this).css("opacity", 1);
-        });
-        $( "#home a" ).animate({ opacity: 0, left: "5.3em", top: "20em"}, function() {
-          $(this).css("opacity", 1);
-        });
+        $("#home h1" ).animate({ opacity: 1, left: "3em", top: "7em"}, { duration: 10});
+        $( "#home a" ).animate({ opacity: 1, left: "5.3em", top: "20em"}, { duration: 10});
     });
     $(".owl-next").on("click", function() {
-        $("#home h1" ).css("opacity", 0);
-        $("#home a" ).css("opacity", 0);
-
-        $( "#home h1" ).animate({ opacity: 1, left:"35%", right: "1em", top: "4em"},  0);
-        $( "#home a" ).animate({ opacity: 1, left:"35%", top: "15em"});
+        $( "#home h1" ).animate({ opacity: 1, left:"35%", right: "1em", top: "4em"}, { duration: 10});
+        $( "#home a" ).animate({ opacity: 1, left:"35%", top: "15em"}, { duration: 10});
     });
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
