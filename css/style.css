@@ -431,7 +431,12 @@ a.active, a.active:hover  {
 	text-align: right;	
 }
 
-
+/* modal */
+.modal-header .close {
+	margin-top: -2px;
+	z-index: 9;
+	position: relative;
+}
  @media (min-width: 1025px) {
 	.servicios-banner, .medios-banner, .clientes-banner {
 		background-attachment: fixed;

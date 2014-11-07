@@ -57,6 +57,7 @@ function init () {
               $("#myModal1 .modal-body").html('<div class="row"><p class="col-lg-10 text-center">Tu mensaje se ha enviado con éxito.</p></div>'); 
               $('.name').val('').focus(); 
               $('.email').val('');
+              $('.telephone').val('');
               $('.comment').val('');
               $('#sendMessage').text("Enviar"); 
             }, 
