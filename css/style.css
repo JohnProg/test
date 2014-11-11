@@ -114,7 +114,7 @@ a.active, a.active:hover  {
 }
 .navbar-header img {
 	padding-top: 2px;
-	height: 49px;
+	/*height: 49px;*/
 }
 #somos .img-responsive, footer .img-responsive {
 	margin: 0 auto;
