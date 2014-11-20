@@ -52,10 +52,10 @@ a, button, p {
 	height: 40%;
 }
 a.active, a.active:hover  {
-    color: #ffffff !important; 
+    color: #ffffff !important;
     font-weight: bold;
-    background-color: #ff6600 !important;  
-    border-color: #e65c00 !important; 
+    background-color: #ff6600 !important;
+    border-color: #e65c00 !important;
     border-radius: 5px !important;
 }
 
@@ -101,7 +101,7 @@ a.active, a.active:hover  {
 	background-image: url('../images/home-banner.jpg');
 	background-repeat: no-repeat;
 	background-color: #d6e5ea;
-	background-position: center; 
+	background-position: center;
 	width: auto;
 	height: 600px;
 	text-align: left;
@@ -178,7 +178,7 @@ a.active, a.active:hover  {
 	padding-bottom: 5%;
 	background-color: #19B5FE;
 	opacity: 0.8;
-	
+
 }
 
 .productos-caja {
@@ -186,7 +186,7 @@ a.active, a.active:hover  {
 	padding: 20px;
 	color: #fff;
 }
-.productos-caja img {	
+.productos-caja img {
 	transition: all .5s ease;
 }
 .productos-caja img:hover {
@@ -230,7 +230,7 @@ a.active, a.active:hover  {
 	height: 600px;
 }
 
-.clientes-container {	
+.clientes-container {
 	padding-bottom: 30px;
 	color: black;
 }
@@ -332,7 +332,7 @@ a.active, a.active:hover  {
 	transition: all .5s ease-in-out;
 	display: none;
 	right: 0;
-	margin: 0 auto;  
+	margin: 0 auto;
 }
 
 .brand {
@@ -390,7 +390,7 @@ a.active, a.active:hover  {
 	left: 0;
 	height: 2px;
 }
-.servicios-banner::after, 
+.servicios-banner::after,
 .medios-banner::after,
 .clientes-banner::after {
     content: "";
@@ -423,12 +423,12 @@ a.active, a.active:hover  {
 }
 .cliente .texto {
 	margin-top: 1.5em;
-	text-align: left;	
+	text-align: left;
 }
 
 .cliente .firma {
 	margin-top: 1.5em;
-	text-align: right;	
+	text-align: right;
 }
 
 /* modal */
@@ -525,24 +525,34 @@ a.active, a.active:hover  {
 		padding-bottom: 3em;
 	}
  }
+@media (max-width: 767px) {
+    .navbar-header img {
+        width: 29%;
+        padding: 10px;
+    }
+    .navbar-form {
+		width: 100%;
+		margin: 0;
+        text-align: center;
+	}
+}
  @media (max-width: 600px) {
+
  	div#navbar {
 	    border-bottom: 1px solid rgb(192, 181, 181);
 	    padding-bottom: 10px;
-	}
- 	.navbar-form {
-		width: 100%;
-		margin: 0;
 	}
  	#owl-demo {
 		height: 350px;
 	}
  	.cliente {
  		height: 600px;
+        margin-top: -20px;
+        padding: 0;
  	}
  	.cliente .firma {
 		margin-top: 0;
-	}	
+	}
  	#home h1 {
 	    width: 70%;
 		top: 4em !important;
@@ -568,9 +578,9 @@ a.active, a.active:hover  {
 	}
 
 	#home .owl-item img {
-	    height: 45%; 
-	    width: 120%; 
-	    max-width: none; 
+	    height: 45%;
+	    width: 120%;
+	    max-width: none;
 	    position: absolute;
 	}
 	.cliente em {
