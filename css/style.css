@@ -375,9 +375,12 @@ a.active, a.active:hover  {
   * {
     text-shadow: none !important;
 }
+select {
+	height: 42px !important;
+}
 #contacto .btn {
     border: none;
-    padding: 8px;
+    padding: 9px;
     font-size: 19px;
 }
 
